@@ -1,6 +1,6 @@
 # Productivity and states of the world
 
-
+## Executive summary
 We want to empirically show that a firm's productivity now depends on (1) technology and (2) a bet they made in the past regarding future potential states of the world. Firms position themselves at time t while thinking of t+s, and in t+s there is uncertainty about what the world is going to look like, AKA there are many potential future states of the world. Firms position themselves relative to these future states not just because of their likelihood, but because of each states' stochastic discount factor (~ marginal utility in that scenario). If the SDF is high, an extra unit of the production of that firm is very valuable.
 
 Currently there is a model and now we want to find the empirics to back it up. There are 2 ways to show it:
@@ -40,49 +40,12 @@ Industries with high competition and growth: https://www.mckinsey.com/mgi/our-re
     > " In the United States, about two-thirds of all R&D spending was allocated to arenas and arena-adjacent industries."
 
 One firm carrying aggregate productivity gains: https://www.mckinsey.com/mgi/our-research/the-power-of-one-how-standout-firms-grow-national-productivity
-- kd
 
-## Plant-level data
-
-**Encuesta Anual Manufacturera - Colombia (1977 - 2024)**
-   - Used in Midrigan and Yi Xu (2014, AEA): "Finance and Misallocation: Evidence from Plant-Level Data"
-  -  Está constituido por la totalidad de los establecimientos industriales que funcionan en el país y que son reconocidos como tal por la Clasificación Industrial Internacional Uniforme de todas las actividades económicas (CIIU) Revisión 4 Adaptada para Colombia.
-  - Está conformada por los establecimientos que se definen como industriales y que funcionan en el país, según la CIIU Rev.4 A.C. éstos deben tener diez o más personas ocupadas o un valor de producción superior al estipulado anualmente. 
-
-**ORBIS**
-- Financial information for over 60,000 public companies and over 40 million private companies worldwide.
-- <mark>Access will be discontinued on February 28, 2027
-
-**International Data Access Network**
-- Network between data centers in France (CASD), Germany, Netherlants, UK
-
-**Bloomberg**
-- I don't know what we have there, I have to go down to the terminal to see
-- Part of the broader "commercial microdata": Dealscan, NL Analytics, CapitsalIQ, Datastream, Worldscope#
-
-
-**World Bank Enterprise Survey**
 
 
 ## Roadmap
 
-ChatGPT quotes
-- Measured productivity can reflect how firms position their resources across possible futures, not merely how technologically efficient they are.
-- The same investment may produce different amounts of output under different circumstances.[...] Without states of the world, there would be no distinction between capital that is productive today and capital that is valuable for another possible future.
-- Increasing future disaster preparedness can mean giving up some productive opportunities in normal states.
-- The firm can rationally fund a project of lower quality because it has an especially valuable state-contingent payoff.
-- Suppose a firm has access to many projects ranked by quality. It funds the most attractive project first, then the next-best one, and so on. As the firm expands, the projects it adds tend to be less productive.
-- When a particular type becomes more valuable, the firm can afford to fund lower-quality projects of that type. This produces the quality ladder.
-- Risk-neutral probability: Although the disaster occurs only 10% of the time, its contingent payoff accounts for 15.8% of the price of a portfolio that pays one unit for certain. So the probability of each state price in the risk-neutral probability does NOT refer to actual probabilities, but to the weight of the state price in a portfolio that pays 1 unit for certain.
-
-
-
-Outstanding questions
-
-In step 3 of the first question, we can say that a funded unit of every type is worth that because the z* has dissapeared, and with that the u?
-I did not understand your explanation of "capital earns the share \(1-1/\eta\) of firm value."
-What is project mass of type u? In general what is project mass?
-I did not understand your explanation of equation 3, but I did understand the idea that you can know the value shares without knowing the pool
-I don't understand what the denominator of S is.
-
-Instructions: When talking about formulas clearly define the terms, even in simple formular like variance formulas
+Unit of analysis = electric plant
+Sample size:
+- Cross-section:
+- Time
