@@ -1,1 +1,30 @@
 
+## EIA-860
+
+Generator-level specific information about existing and planned generators and associated environmental equipment at electric power plants with 1 megawatt or greater of combined nameplate capacity
+
+From 2013, it has constrution cost for new electric generators
+
+## EIA-923
+Power Plant Operations Report
+
+### out_eia923__monthly_generation_fuel_combined: 
+**Monthly time series of generation and fuel consumption of all generation units.**
+**Source**: EIA Form 923 – Power Plant Operations Report (Schedule 3)
+**Primary key**: plant_id_eia, report_date, prime_mover_code, energy_source_code
+**Notes from PUDL** 
+- This data can’t be easily linked to individual boilers, generators, and generation units, but it is provides the most complete coverage of fuel consumption and electricity generation for the entire generation fleet
+
+**Roadmap**: output, fuel burned, by fuel
+- Net electricity generation in MWh: net_generation_mwh
+- Fuel type: fuel_type_code_pudl
+- Energy source: energy_source_code
+- Fuel consumed for electricity consumption in MMBtu: fuel_consumed_for_electricity_mmbtu
+Other
+- prime_mover_code: 
+
+Access the table
+> library(arrow)
+> df <- read_parquet(
+>       "s3://pudl.catalyst.coop/nightly/out_eia923__monthly_generation_fuel_combined.parquet"
+> )
